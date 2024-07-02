@@ -1,0 +1,21 @@
+/* body{
+    background-color: #fff;
+    color: #000;
+} */
+
+.one{
+    padding: 0 30%;
+}
+.logo{
+    background-color: #fff;
+}
+
+.forms button{
+    background-color:  #fea500;
+}
+
+@media only screen and (max-width: 1110px) {
+    .one{
+        padding: 0 7%;
+    } 
+}

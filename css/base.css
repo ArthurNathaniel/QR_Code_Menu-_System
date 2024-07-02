@@ -1,0 +1,267 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Onest", sans-serif;
+
+
+}
+
+body {
+    font-family: "Onest", sans-serif;
+
+    background-color: #000;
+    color: #fff;
+}
+
+@font-face {
+    font-family: 'thunder';
+    src: url('./thunder.ttf') format('truetype');
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'thunder';
+}
+
+.menu_bg {
+    height: 30vh;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+.menu_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+    padding: 0 5%;
+
+}
+
+/* .menu_one {
+    border: 2px dashed;
+} */
+
+.title h1 {
+    text-align: center;
+    background-color: #fea500;
+    color: #000;
+}
+
+.food_details {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+
+    padding-block: 10px;
+}
+
+.food_price {
+    text-align: right;
+}
+
+.food_name p {
+    color: #fea500;
+    font-weight: 800;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.forms input {
+    height: 44px;
+    width: 100%;
+}
+
+.forms select {
+    height: 44px;
+    width: 100%;
+}
+
+.forms input:focus {
+    outline: none;
+}
+
+.forms select:focus {
+    outline: none;
+}
+
+.forms button {
+    height: 44px;
+    background-color: #000;
+    color: #fff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #fea500;
+    color: #000;
+    font-family: 'thunder';
+}
+
+.all {
+    padding: 0 10%;
+    padding-block: 50px;
+}
+
+.delete {
+    background-color: transparent;
+    border: none;
+    color: red;
+}
+.message-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 0 1%;
+    padding-block: 10px;
+margin-bottom: 20px;
+ }
+
+
+ .logo{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    background-image: url(../images/logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+.sidebar_all {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-block: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: none;
+    z-index: 68;
+    overflow-y: scroll;
+  
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.ll {
+    border-top: 2px solid #534f4f2a;
+}
+
+.links a {
+    border-bottom: 2px solid #534f4f2a;
+    width: 100%;
+    padding: 0 10%;
+    text-decoration: none;
+    padding-block: 10px;
+    color: #fff;
+    background-color: #000;
+}
+
+.links h3 {
+    padding: 0 10%;
+    padding-block: 10px;
+      background-color:  #fea500;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 18px !important;
+    font-weight: 500;
+    margin: 0;
+}
+
+.links a:hover {
+    background-color: #fea500;
+    color: #000;
+}
+
+
+
+#toggleButton {
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: absolute;
+    z-index: 332;
+    position: fixed;
+      background-color:  #fea500;
+    top: 0;
+
+}
+
+.logout {
+      background-color: #fea500 !important;
+      font-family: 'thunder';
+    position: absolute;
+    bottom: 50px;
+}
+
+.log:hover {
+    background-color: #f2f2f2 !important;
+}
+
+#toggleButton i {
+    font-size: 20px;
+    color: 000;
+    font-weight: 900;
+}
+
+@media only screen and (max-width: 1110px) {
+    .menu_grid {
+        grid-template-columns: 1fr;
+    }
+    
+   .sidebar_all{
+    width: 70%;
+}
+
+}
+

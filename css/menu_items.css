@@ -1,0 +1,19 @@
+body{
+    background-color: #f2f4f6;
+    color: #000;
+}
+
+.menu_list_all{
+    padding: 0 10%;
+    padding-block: 50px;
+}
+
+
+.copyright{
+ 
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    padding-block: 50px;
+    text-align: center;
+}
